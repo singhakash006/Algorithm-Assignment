@@ -1,0 +1,28 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int sum(vector<long>v){
+    long s=0;
+    for(int i=0;i<v.size();i++){
+    s+=v[i];
+}
+
+   cout<<s<<endl;
+   return 0;
+}
+int main(){
+    int n;
+    cin>>n;
+    int element;
+   vector<long>A;
+   for(int i=0; i<n; i++){
+       cin>>element;
+       A.push_back(element);
+       
+       
+   }
+   sum(A);
+   return 0; 
+    
+    
+}
