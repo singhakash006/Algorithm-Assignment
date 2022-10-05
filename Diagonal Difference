@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int size;
+    cin>>size;
+    int s1=0,s2=0, d,i=size-1,j=0;
+    int arr[size][size];
+    for(int i=0;i<size;i++){
+        for(int j=0;j<size;j++){
+          cin>>arr[i][j];  
+          
+        }
+    }
+     for(int i=0;i<size;i++){
+        for(int j=0;j<size;j++){
+            if(i==j){
+         s1+=arr[i][j];
+        }
+    }}
+    while( i>=0 && j<size){
+            
+         s2+=arr[i][j];
+         i--;
+         j++;
+        }
+    d=s2-s1;
+    d=abs(d);
+    cout<<d<<endl;
+    
+    return 0;
+}
